@@ -1,65 +1,91 @@
-# CakRent Car Rental Website
+# CakRent - Car Rental App
 
-Welcome to CakRent, your one-stop destination for renting cars. This project is built with React, Next.js, TypeScript, and Tailwind CSS.
+CakRent is a modern car rental application built with React, Next.js 13, TypeScript, and Tailwind CSS. This application allows users to search, filter, view prices, and get detailed information about available cars for rent. It integrates data from the Car API by API Ninja for car information and the Car Image API from Imagin Studio to display car images.
 
 ## Table of Contents
 
+- [Features](#features)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Configuration](#configuration)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **Search and Filter**: Users can search for specific cars and apply filters to refine their search results.
+- **Price Information**: The app displays rental prices for each car, making it easy for users to compare options.
+- **Car Details**: Users can access detailed information about each car, including specifications, images, and more.
+- **API Integration**: CakRent integrates with the Car API by API Ninja for car data and the Car Image API from Imagin Studio for images.
 
 ## Getting Started
 
-### Prerequisites
-
-Before you start, make sure you have the following software installed on your machine:
-
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+To get started with CakRent, follow these steps:
 
 ### Installation
 
 1. Clone the repository to your local machine:
 
-   ```shell
+   ```bash
    git clone https://github.com/cakradana/cak-rent.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
    cd cak-rent
    ```
 
-2. Install the project dependencies:
+3. Install dependencies:
 
-   ```shell
+   ```bash
    npm install
    ```
 
-## Configuration
+### Usage
 
-Create a `.env` file in the project root directory based on the provided `.env.example` file. You'll need to obtain the necessary API keys and fill them in the `.env` file.
+1. Obtain API keys from [API Ninja](https://api-ninja.com/) and [Imagin Studio](https://www.imaginstudio.com/).
 
-```plaintext
-NEXT_PUBLIC_RAPID_API_KEY=your_rapid_api_key
-NEXT_PUBLIC_IMAGIN_API_KEY=your_imagin_api_key
-```
+2. Create a `.env.local` file in the project root directory and add your API keys:
 
-## Usage
+   ```env
+   NEXT_PUBLIC_RAPID_API_KEY=your_api_ninja_key
+   NEXT_PUBLIC_IMAGIN_API_KEY=your_imagin_studio_key
+   ```
 
-To start the development server, run the following command:
+3. Start the development server:
 
-```shell
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-This will launch the CakRent website locally. Open your web browser and navigate to `http://localhost:3000` to access the website.
+4. Open your browser and visit [http://localhost:3000](http://localhost:3000) to use CakRent.
 
 ## Contributing
 
-We welcome contributions from the community. If you'd like to contribute to the project, please follow these steps:
+We welcome contributions to improve CakRent. To contribute, follow these steps:
 
 1. Fork the repository on GitHub.
-2. Create a new branch with a descriptive name for your feature or bug fix.
-3. Make your changes and commit them with clear commit messages.
-4. Push your branch to your fork.
-5. Create a pull request against the main repository.
+
+2. Clone your forked repository to your local machine.
+
+3. Create a new branch for your feature or bug fix:
+
+   ```bash
+   git checkout -b feature-name
+   ```
+
+4. Make your changes, commit them, and push to your forked repository:
+
+   ```bash
+   git commit -m "Add new feature"
+   git push origin feature-name
+   ```
+
+5. Create a pull request from your forked repository to the main repository.
+
+6. Our team will review your pull request, provide feedback, and merge it once it's ready.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
